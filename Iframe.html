@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./validation.js">
+    <style>
+        div{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <iframe srcdoc="<p>Good Morning</p>" frameborder="0"></iframe> <br>
+
+    <label for="username">Username</label> 
+    <input type="text" name="username" id="username">
+    <br> <br>
+    <input type="text" placeholder="username"><br>
+    <input type="button" placeholder="submit"><br>
+    <input type="number" placeholder="mobile"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password">
+
+    <h3>Select State</h3>
+    <select name="State" id="" value="State-name">
+        <option value="">Choose state</option>
+        <option value="State">AP</option>
+        <option value="State">TS</option>
+        <option value="State">KAR</option>
+        <option value="State">TN</option>
+    </select>
+    
+    <h3>Select state and district</h3>
+    <select name="state" id="">
+        <option value="">Choose food</option>
+        <optgroup label="Fruit">
+            <option value="Apple" id="apple">
+            <a href="./car.html">Apple</a>
+            </option>
+            <option value="Orange">Orange</option>
+            <option value="Guava">Guava</option>
+            <option value="Banana">Banana</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+        <option value="Potata">Potata</option>
+        <option value="Tomato">Tomato</option>
+        <option value="Mirchi">Mirchi</option>
+        <option value="Onion">Onion</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="ice-cream">Choose a Flavour</label>
+    <input list="ice-cream-flavour" id="ice-cream" name="ice-cream" />
+
+    <datalist id="ice-cream-flavour">
+        <option value="Chocolate"></option>
+        <option value="Vanilla"></option>
+        <option value="Strawberry"></option>
+        <option value="Mango"></option>
+    </datalist>
+    <br> <br>
+    <textarea rows="5" cols="50" placeholder="Feedback"></textarea>
+    <input type="radio" name="" id="">
+    <input type="checkbox">
+
+    <div class="">
+        <input type="radio"  name="gen">
+        <h3>male</h3>
+        <input type="radio"  name="gen">
+        <h3>female</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Details</title>
+    <style>
+      .Education{
+        display: flex;
+       }
+       .Education{
+        flex:1;
+       }
+     .Container fieldset >div{
+        display: flex;
+       }
+       .Container fieldset{
+        flex:1;
+       }
+       .Skills{
+        display: grid;
+       }
+    </style>
+</head>
+<body>
+    <div class="User-Details">
+     <form action="">
+       <div class="Personal">
+         <fieldset>
+            <legend>Personal Details</legend>
+                <label for="Name">Name:</label>
+                <input type="text" name="User-Details" id="Name" pattern="^[A-Z a-z]" required><br><br>
+                <label for="Age">Age:</label>
+                <input type="number" name="User-Details" id="Age"><br><br>
+                <label for="E-mail">E-mail:</label>
+                <input type="email" name="User-Details" id="E-mail" required><br><br>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" name="User-Details" id="mobile" required>
+         </fieldset>
+       </div>
+       <div class="Container">
+        <fieldset>
+            <legend>Education</legend>
+            <div class="Graduation">
+                <label for="Institute">Institution:</label>
+                <input type="text" name="User-Details" id="Institute" placeholder="Enter Institution name" pattern="^[A-Z a-z]" required><br><br>
+                <label for="graduation">Graduation:</label><br><br>
+                <input type="radio" name="Graduation" id="graduation"><span>B Tech</span><br><br>
+                <input type="radio" name="Graduation" id="graduation"><span>Degree</span><br><br>
+                <input type="radio" name="Graduation" id="graduation"><span>MCA</span><br><br>
+                <label for="Specialiazation">Specialiazation:</label><br><br>
+                <input type="radio" name="Specialiazation" id="Specialiazation"><span>ECE</span>
+                <input type="radio" name="Specialiazation" id="Specialiazation"><span>CSE</span>
+                <input type="radio" name="Specialiazation" id="Specialiazation"><span>EEE</span><br><br>
+                <label for="Passed-out">YOP</label><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2023</span>
+                <input type="radio" id="Passed-out" name="YOP"><span>2024</span>
+                <input type="radio" id="Passed-out" name="YOP"><span>2025</span><br><br>
+                <label for="percentage">CGPA:</label>
+                <input type="text" placeholder="Enter CGPA" id="percentage">
+            </div>
+            <div class="Intermediate">
+                <label for="Institute">Institution:</label>
+                <input type="text" name="College" id="Institute" placeholder="Enter Institution name" pattern="^[A-Z a-z]" required><br><br>
+                <label for="Intermediate">Course:</label><br><br>
+                <input type="radio" name="Course" id="Intermediate"><span>Intermediate</span><br><br>
+                <input type="radio" name="Course" id="Intermediate"><span>Diploma</span><br><br>
+                <label for="Passed-out">YOP</label><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2019</span><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2018</span><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2017</span><br><br>
+                <label for="percentage">CGPA:</label>
+                <input type="text" placeholder="Enter CGPA" id="percentage"><br><br>
+            </div>
+            <div class="SSC">
+                <label for="Institute">Institution:</label>
+                <input type="text" name="School" id="Institute" placeholder="Enter Institution name" pattern="^[A-Z a-z]" required><br><br>
+                <label for="Intermediate">Course:</label><br><br>
+                <input type="radio" name="Course" id="SSC"><span>SSC</span><br><br>
+                <label for="Passed-out">YOP</label><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2017</span><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2016</span><br><br>
+                <input type="radio" id="Passed-out" name="YOP"><span>2015</span><br><br>
+                <label for="percentage">CGPA:</label>
+                <input type="text" placeholder="Enter CGPA" id="percentage">
+            </div>
+        </fieldset>
+        </div>
+        <div class="Skills">
+           <fieldset>
+            <legend>Skills</legend>
+                <input type="radio" name="Java" id="Java"><span>Java</span><br>
+                <input type="radio" name="Python" id="Python"><span>Python</span><br>
+                <input type="radio" name="C" id="C"><span>C</span><br>
+           </fieldset>
+
+        </div>
+        <input type="reset">
+    </form>
+    </div>
+        
+</body>
+</html>
