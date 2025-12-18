@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input{
+        color: blue;
+        background-color: bisque;
+      }
+      h1{
+        color: brown;
+        font-style: italic;
+      }
+      #heading{
+        color: cadetblue;
+      }
+      #Uname{
+        background-color: aquamarine;
+        color: blueviolet;
+      }
+      #mobile{
+        background-color: aquamarine;
+        color: blueviolet;
+      }
+      .Uname{
+       background-color: azure;
+       color: chocolate;
+
+      }
+      .mobile{
+        background-color: azure;
+       color: chocolate;
+      }
+      .heading{
+        color: crimson;
+      }
+      *{
+        background-color: aqua;
+        font-size: xx-large;
+      }
+      .Uname, #mobile, #heading .heading{
+        background-color: rgb(83, 77, 88);
+      }
+      input[class =Username]{
+        background-color: rgb(65, 178, 67);
+      }
+      input[id=submit]{
+        background-color: rgb(65, 178, 67);
+      }
+      [class |="User"]{
+        background-color: darkslategray;
+      }
+      input[id |=User]{
+        background-color: rgb(234, 38, 103);
+      }
+      [type]:focus{
+          background-color: goldenrod;
+      }
+    [type]:focus{
+      background-color: rgb(68, 62, 46);
+    }
+    form .Usernames{
+        background-color: midnightblue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Element selector</h1>
+        <form action="">
+            <input type="text"><br>
+            <input type="number"><br>
+        </form>
+
+    <h1 id="heading">Id Selector</h1>
+    <form action="">
+        <input type="text" id="Uname"><br>
+        <input type="number" id="mobile">
+    </form>
+    <h1 class="heading">Class Selector</h1>
+    <form action="">
+        <input type="text" class="Uname"><br>
+        <input type="number" class="mobile">
+    </form>
+    <h1 class="heading">Universal Selector</h1>
+    <form action="">
+        <input type="search" id="Username"><br>
+        <input type="button" id="submit">
+    </form>
+    <form action="">
+        <input type="search" class="Username"><br>
+        <input type="button" class="mobile">
+    </form>
+    <form action="">
+        <input type="search" class="Uname"><br>
+        <input type="button" class="submit">
+    </form>
+    <h1 class="heading">Group Selector</h1>
+    <form action="">
+        <input type="search" id="Uname"><br>
+        <input type="button" id="mobile">
+    </form>
+    <form action="">
+        <input type="search" class="Uname"><br>
+        <input type="button" class="mobile">
+    </form>
+    <h1 class="heading">Attribute Selector</h1>
+    <form action="">
+        <input type="search" id="User-15522"><br>
+        <input type="button" id="mobile">
+    </form>
+    <form action="">
+        <input type="search" class="User-2555"><br>
+        <input type="button" class="mobile">
+    </form>
+    <h1 class="heading">Pseudo Selector</h1>
+    <form action="">
+        <input type="search" id="User name"><br>
+        <input type="button" id="mobile number">
+    </form>
+    <form action="">
+        <input type="search" class="User name"><br>
+        <input type="button" class="mobile number">
+    </form>
+    <h1 class="heading">Descedent Selector</h1>
+    <form action="">
+        <input type="search" class="Usernames"><br>
+        <input type="button" class="mobile number">
+    </form>
+</body>
+</html>
